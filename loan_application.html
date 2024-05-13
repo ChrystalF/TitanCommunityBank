@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/TitanCommunityBank.css">
+<title>Titan Community Bank: Loan Application</title>
+<meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>Titan Community Bank</h1>
+  </header>
+<nav>
+   <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="help.html">Help</a></li>
+   </ul>	
+</nav>
+
+<main>
+  <script src="js/prequalify.js"></script>
+    <h2 id="applicationFormH2">Apply here:</h2><br>
+         <form method="post" name="applicationForm" action="loan_application.html" id="applicationForm">
+           <label for="emailAddress">E-mail Address:</label>
+             <input type="email" name="emailAddress" id="emailAddress" placeholder="@" required aria-required="true">
+             <span></span>
+           <label for="confirmEmail">Re-enter E-mail Address:</label>
+             <input type="email" name="confirmEmail" id="confirmEmail" placeholder="@" required aria-required="true">
+             <span> </span><span id="confirmEmailError"></span>
+           <label for="firstName">First Name:</label>
+             <input type="text" name="firstName" id="firstName" required aria-required="true">
+             <span> </span>
+           <label for="lastName">Last Name:</label>
+             <input type="text" name="lastName" id="lastName" required aria-required="true">
+             <span> </span>
+           <label for="phoneNumber">Phone Number:</label>
+             <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="123-456-7890" required aria-required="true">
+           <label for="city">City:</label> 
+             <input type="text" name="city" id="city" required aria-required="true">
+             <span> </span>
+           <label for="state">State:</label>
+             <select name="stateList" id="state" required aria-required="true">
+                 <option value="Please select a state.">Please select a state</option>
+                 <option value="AL">AL</option>
+                 <option value="AK">AK</option>
+                 <option value="AZ">AZ</option>
+                 <option value="AR">AR</option>
+                 <option value="CA">CA</option>
+                 <option value="CO">CO</option>
+                 <option value="CT">CT</option>
+                 <option value="DE">DE</option>
+                 <option value="DC">DC</option>
+                 <option value="FL">FL</option>
+                 <option value="GA">GA</option>
+                 <option value="HI">HI</option>
+                 <option value="ID">ID</option>
+                 <option value="IL">IL</option>
+                 <option value="IN">IN</option>
+                 <option value="IA">IA</option>
+                 <option value="KS">KS</option>
+                 <option value="KY">KY</option>
+                 <option value="LA">LA</option>
+                 <option value="ME">ME</option>
+                 <option value="MD">MD</option>
+                 <option value="MA">MA</option>
+                 <option value="MI">MI</option>
+                 <option value="MN">MN</option>
+                 <option value="MS">MS</option>
+                 <option value="MO">MO</option>
+                 <option value="MT">MT</option>
+                 <option value="NE">NE</option>
+                 <option value="NV">NV</option>
+                 <option value="NH">NH</option>
+                 <option value="NJ">NJ</option>
+                 <option value="NM">NM</option>
+                 <option value="NY">NY</option>
+                 <option value="NC">NC</option>
+                 <option value="ND">ND</option>
+                 <option value="OH">OH</option>
+                 <option value="OK">OK</option>
+                 <option value="OR">OR</option>
+                 <option value="PA">PA</option>
+                 <option value="RI">RI</option>
+                 <option value="SC">SC</option>
+                 <option value="SD">SD</option>
+                 <option value="TN">TN</option>
+                 <option value="TX">TX</option>
+                 <option value="UT">UT</option>
+                 <option value="VT">VT</option>
+                 <option value="VA">VA</option>
+                 <option value="WA">WA</option>
+                 <option value="WV">WV</option>
+                 <option value="WI">WI</option>
+                 <option value="WY">WY</option>
+               </select>
+             <span> </span>
+           <label for="zipCode">Zip Code:</label>
+             <input type="text" name="zipCode" id="zipCode" minlength="5" maxlength="5" required aria-required="true">
+             <span> </span>
+           <label for="grossIncome">Gross Income:</label>
+             <input type="text" name="grossIncome" id="grossIncome" maxlength="6" required aria-required="true">
+             <span> </span>
+           <label for="SSN">Last 4 digits of SSN:</label>
+             <input type="text" name="SSN" id="SSN" minlength="4" maxlength="4" required area-required="true"><br>
+             <span> </span>
+           <p id="prequalificationAgreement">This prequalification request serves as my written instruction to Titan Community Bank to obtain a “soft inquiry” about my credit information, 
+                                                which won’t affect my credit score. I agree that TCB can send me an email confirming my request.</p><br>
+           <label for="agreementCheckbox">Check here if you agree to the terms above:</label>
+             <input type="checkbox" name="agreementCheckbox" id="agreementCheckbox" required aria-required="true">
+           <input type="submit" value="Apply" id="apply"><input type="reset" value="Reset" id="reset">
+         </form>
+      <br>
+     <h3 id="applicationHeader">&nbsp;</h3>
+     <table id="applicationInformation"></table>
+</main>
+<script src="js/updateYear.js"></script>
+<footer>
+</footer>
+</body>
+</html>

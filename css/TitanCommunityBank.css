@@ -1,0 +1,412 @@
+* {   
+      box-sizing: border-box;
+      }
+      
+body {
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        color: #1a1a1a;
+        font-family: Tahoma, Trebuchet MS, sans-serif;
+        font-size: 14pt;
+      }
+      
+main {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
+      
+header {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: 35%;
+        background-color: #003cb3;
+        color: #FFFFFF;
+        text-align: center;
+      }
+      
+h1, h2, h3, h4 {
+        display: grid;
+        position: relative;
+        text-align: center;
+      }
+      
+h2 {
+        margin-top: 40px; 
+      }
+      
+h4 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: -13px;
+        font-weight: lighter;
+        font-size: 10pt;
+      }
+      
+nav {
+        list-style-type: none;
+        margin: auto;
+        height: 0px; 
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+      }
+      
+nav a {
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+nav a:link {
+        text-decoration: none;
+        color: #000000;
+      }
+      
+nav a:visited {
+        text-decoration: none;
+        color: #1a1a1a;
+      }
+      
+nav a:hover {
+        text-decoration: none;
+        color: #1a1a1a;
+        border-bottom: solid 3px;
+        border-bottom-color: #000000;
+      }
+      
+nav ul {
+        list-style-type: none;
+        display: inline;
+        font-size: 16pt;
+        width: 100%;
+        z-index: 9999;
+      }
+      
+nav li {
+        width: 100%;
+      }
+      
+footer {
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        font-style: normal;
+        grid-column: 1;
+        grid-row: -1;
+        justify-content: center;
+        text-align: center;
+        bottom: 0;
+        color: #000000;
+        margin-top: auto;
+      }
+      
+#ad-container {
+        background: none;
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+      }
+      
+#ad-container img {
+        border: 0;
+        width: 80%;
+        height: auto;
+      }
+      
+#bankWelcome {
+        display: grid;
+        position: relative;
+        top: 80px;
+        width: 100%;
+        padding: 0;
+      }
+      
+form {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        width: 100%;
+        background-color: #cbcbcb;
+        border: groove #c8c8c8 1px;
+        border-radius: 25px;
+      }
+      
+input,
+textarea,
+select {
+        margin-bottom: .2em;
+        margin-right: 0;
+        width: 60%;
+        box-sizing: border-box;
+        border: 1px solid #CCCCCC;
+        transition: 0.5s; 
+        outline: none;
+      }
+      
+input:focus {
+        border: 1px solid #555555;
+      }
+      
+#apply,
+#loginButton,
+#registerButton,
+#resetPasswordButton,
+#reset,
+#resetForm {
+        position: relative;
+        background-color: #404040;
+        color: #FFFFFF;
+        font-size: 14pt;
+        border: none;
+        padding: 5px;
+        margin: 0 auto;
+      }
+#apply:hover,
+#loginButton:hover,
+#resetPasswordButton:hover,
+#reset:hover,
+#resetForm:hover {
+        background-color: #1a1a1a;
+        color: #FFFFFF;
+      }
+#applicationInformation span,
+#applicationInformation,
+#applicationForm span,
+#applicationHeader,
+#registrationHeader,
+#loginHeader {
+        color: red;
+        display: flex;
+        justify-content: center;
+      }
+      
+#registrationHeader {
+        font-size: 12pt;
+        position: relative;
+      }
+      
+#registrationForm {
+        position: relative;
+        top: 80px;
+      }
+#agreementCheckbox {grid-column: 2;}
+#prequalificationAgreement {grid-column: span 3;
+                            text-align: left;}
+#welcomeMessage {height: 500px;
+                 width: 600px;
+                 margin: 0 auto;}
+#about {position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 300px;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 80px;}
+#help {position: relative; 
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 300px;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 80px;}
+#loginFormContainer {position: relative;
+            top: 80px;}
+#applicationForm {position: relative;
+                  top: 80px;}
+#applicationFormH2 {position: relative;
+                    top: 70px;}
+#registerAccountHeader {position: relative;
+                        top: 80px;}
+#userBalance {width: 300px;}
+#userInputs {width: 515px;
+             display: block;
+             margin: 0 auto;}
+#depositAmount {width: 300px;}
+#withdrawAmount {width: 300px;}
+#depositButton {position: absolute;
+                margin-right: 0px;
+                padding-left: 5px;
+                padding-right: 5px;}
+#withdrawButton {position: absolute;
+                 margin-right: 0px;
+                 padding-left: 5px;}
+#depositButton:hover {background-color: #404040;
+                       color: #FFFFFF;
+                       border-radius: 5px;}
+#withdrawButton:hover {background-color: #404040;
+                       color: #FFFFFF;
+                       border-radius: 5px;}
+#chartContainer {
+                position: relative;
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;}
+#userTransactions {
+                margin: 0 auto;
+                 width: 800px;
+                line-height: 14pt;
+                font-size: 10pt;
+                overflow-x: hidden;
+               overflow-y: auto;
+               text-align: left;}
+#SSN    {
+        -webkit-text-security: disc;
+        -moz-text-security: disc;
+        }
+.dataCell {width: 80px;
+           font-size: 10pt;}
+
+label {
+  display: inline-block;
+  width: 100px;
+  white-space: nowrap;}
+
+@media (min-width: 400px) {
+  header {display: flex;
+          width: 100%;
+          height: 80%;}
+  input, textarea, select {width: 100%;}
+  body {background-color: #FFFFFF;}
+  nav {background-color: #FFFFFF;}
+  nav ul {background-color: #FFFFFF;}
+  #bankWelcome {top: 60px;}
+}
+@media (min-width: 600px) {
+    nav ul {display: flex; 
+            flex-flow: row nowrap;
+	    justify-content: flex-start;}
+    nav li {width: 7em;}
+     form {
+          display: grid;
+          gap: 1em;
+          grid-template-columns: 12em 1fr;}
+     input[type="submit"] {grid-column: 1/2;
+                           width: 9em;}
+     input[type="reset"] {grid-column: 2/2;
+                          width: 9em;}
+     label {grid-column: 1;}
+    }
+@media (min-width: 1024px) {
+    body {background-color: #F1F1F1;}
+    header {font-size: 120%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 35vh;}
+    nav {background-color: #FFFFFF;}
+    nav ul {background-color: #FFFFFF;}
+    nav li {border: none;
+            background-color: #FFFFFF;
+            position: relative;}
+    nav li a {background-color: #FFFFFF;
+              height: 35px;}
+    nav a:link {text-decoration: none; color: #000000;}
+    nav a:visited {text-decoration: none; color: #1a1a1a;}
+    nav a:hover {text-decoration: none; color: #1a1a1a; border-bottom: solid 3px; border-bottom-color: #000000;}
+    h1 {text-align: center;
+        position: relative;
+        top: 25%;}
+    h4 {position: relative;
+        display: flex;
+        justify-content: center;
+        top: -30px;
+        font-size: 12pt;}   
+    #registrationHeader {position: relative;
+                         display: flex;
+                        justify-content: center;
+                        top: -10px;}                         
+    form {width: 50%;
+          margin-left: 25%;}
+    #bankWelcome {display: flex;
+        margin: auto;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;}
+        #ad-container img {border:0;
+                width: 100%;
+                height: auto;}
+        p {text-align: center;}
+        footer {position: relative;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                bottom: 0px;
+                margin-bottom: 0;
+                padding-left: 2em;
+                padding-right: 2em;
+                font-size: 12pt;}}
+@media (min-width: 1280px) {
+        body {background-color: #F1F1F1;}
+        nav {background-color: #FFFFFF;
+             position: relative;
+             margin: auto;
+             top: -22px;}
+        nav ul {background-color: #FFFFFF;
+                top: -30px;}
+        nav li {border: none;
+                background-color: #FFFFFF;
+                position: relative;}
+        nav li a {background-color: #FFFFFF;}
+        nav a:link {text-decoration: none; color: #000000;}
+        nav a:visited {text-decoration: none; color: #1a1a1a;}
+        nav a:hover {text-decoration: none; color: #1a1a1a; border-bottom: solid 3px; border-bottom-color: #000000;}
+        h1 {text-align: center;
+            position: relative;
+            top: 25%;}
+        h4 {position: relative;
+            display: flex;
+            justify-content: center;
+            top: -30px;
+            font-size: 12pt;}
+        header {display: flex;
+                justify-content: center;
+                text-align: center;
+                height: 35vh;}
+        #bankWelcome {display: flex;
+                margin: auto;
+                width: 50%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;}
+        #ad-container img 
+               {border:0;
+                width: 100%;
+                height: auto;}
+        #about {position: relative;
+                display: flex;
+                top: 50px;
+                width: 50%;}
+        #help {position: relative;
+               width: 50%;
+               top: 50px;}
+        #registrationForm {top: 50px;}
+        form {width: 50%;
+              margin-left: 25%;}
+        footer {position: relative;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                bottom: -50px;
+                margin-bottom: 0;
+                padding-left: 2em;
+                padding-right: 2em;
+                font-size: 12pt;}
+}
+
+
+
+
+
+
+
+
